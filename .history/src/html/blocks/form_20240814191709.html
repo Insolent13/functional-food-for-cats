@@ -1,0 +1,100 @@
+<section class="page-form__section">
+    <h2 class="visually-hidden">Форма заявки</h2>
+
+    <!-- Форма заявки -->
+    <form class="form" action="https://echo.htmlacademy.ru" name="initial-form" method="post">
+        <div class="form__fieldset-wrapper">
+            
+            <!-- Информация о коте -->
+             <fieldset class="form__fieldset form__fieldset--about fieldset">
+                <legend class="visually-hidden">
+                    <h2 class="page__subtitle">Информация о коте</h2>
+                </legend>
+                <ul class="fieldset__list fieldset__list--about container">
+                    <li class="fieldset__item">
+                        <label class="field"><span class="field__text">Имя:* </span><input class="field__input" name="cat-name" type="text" placeholder="Степан" required></label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="field"><span class="field__text">Вес (кг):* </span><input class="field__input" name="cat-weight" type="number" min="1" step="0.5" placeholder="7" required></label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="field"><span class="field__text">Возраст (лет): </span><input class="field__input" name="cat-age" type="number" min="1" placeholder="7"></label>
+                    </li>
+                </ul>
+            </fieldset>
+
+            <!-- Цель программы -->
+             <fieldset class="form__fieldset form__fieldset--target fieldset">
+                <legend class="visually-hidden">
+                    <h2 class="page__subtitle container">Цель программы</h2>
+                </legend>
+                <ul class="fieldset__list  fieldset__list--target container">
+                    <li class="fieldset__item">
+                        <label class="select select--radio"><input class="select__input" type="radio" name="target" value="slim" checked><span class="select__text"> Похудение</span></label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="select select--radio"><input class="select__input" type="radio" name="target" value="fatten"><span class="select__text"> Набор массы</span></label>
+                    </li>
+                    <li class="fieldset__item">
+                        <label class="select select--radio"><input class="select__input" type="radio" name="target" value="offer"><span class="select__text"> Не знаю (Нужен ваш совет)</span></label>
+                    </li>
+                </ul>
+            </fieldset>
+        </div>
+        
+        <!-- Контактные данные -->
+        <fieldset class="form__fieldset form__fieldset--contacts fieldset">
+            <legend class="fieldset__wrapper fieldset__wrapper--contacts page__divider">
+                <h2 class="page__subtitle container"><span class="page__divider-item">Контактные данные <br> (владельца кота)</span></h2>
+            </legend>
+            <ul class="fieldset__list fieldset__list--contacts container">
+                <li class="fieldset__item">
+                    <label class="field field__ico field__ico--email"><span class="field__text">E-mail:* </span><input class="field__input" type="email" name="email" placeholder="catstepan@gmail.com" required>
+                    </label>
+                </li>
+                <li class="fieldset__item">
+                    <label class="field field__ico field__ico--phone"><span class="field__text">Телефон:* </span><input class="field__input" type="tel" name="phone" placeholder="8 (960) 900-60-90" required></label>
+                </li>
+            </ul>
+        </fieldset>
+        
+        <!-- Коментарий -->
+         <div class="form__fieldset form__fieldset--comments fieldset">
+            <div class="fieldset__wrapper fieldset__wrapper--comments page__divider">
+                <h2 class="page__subtitle container"><span class="page__divider-item">Комментарий</span></h2>
+            </div>
+
+            <div class="fieldset__list container">
+          <label class="field" for="comments"><span class="visually-hidden">Оставьте Ваш коментарий</span>
+            <textarea class="field__input field__input--comments" name="comments" id="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+          </label>
+        </div>
+      </div>
+
+      <!-- Дополнительно -->
+      <fieldset class="form__fieldset form__fieldset--more fieldset">
+        <legend class="fieldset__wrapper fieldset__wrapper--more page__divider">
+          <h2 class="page__subtitle container"><span class="page__divider-item">Дополнительно</span></h2>
+        </legend>
+        <ul class="fieldset__list fieldset__list--more container">
+          <li class="fieldset__item">
+            <label class="select select--checkbox"><input class="select__input" type="checkbox" name="addition" value="sweetener" checked><span class="select__text"> Сахарозаменитель</span></label>
+          </li>
+          <li class="fieldset__item">
+            <label class="select select--checkbox"><input class="select__input" type="checkbox" name="addition" value="water"><span class="select__text"> Питьевая вода</span></label>
+          </li>
+          <li class="fieldset__item">
+            <label class="select select--checkbox"><input class="select__input" type="checkbox" name="addition" value="milk"><span class="select__text"> Молоко</span></label>
+          </li>
+          <li class="fieldset__item">
+            <label class="select select--checkbox"><input class="select__input" type="checkbox" name="addition" value="vitamin"><span class="select__text"> Витамины</span></label>
+          </li>
+        </ul>
+      </fieldset>
+      <!-- Отправить анкету  -->
+      <div class="form__button-wrapper container">
+        <button class="form__button button" type="submit">Отправить заявку</button>
+        <p class="form__notice">* – Обязательные поля</p>
+      </div>
+    </form>
+  </section>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>>Cat Energy: Подбор программы</title>
+	<link rel="stylesheet" href="./css/main.css" />
+
+	<link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg">
+	<link rel="apple-touch-icon" sizes="180x180" href="./img/favicons/apple-touch-icon.png">
+</head>
+
+<body class="page__body">
+    <header class="page__header page-header">
+        <nav class="page-header__nav page-header__nav--decorate">
+            <div class="page-header__bar">
+                <a class="page-header__logo logo" href="./index.html">
+                    <picture>
+                        <source media="(min-width: 1320px)" srcset="./img/logos/ico-cat-big.svg">
+                        <source media="(min-width: 768px)" srcset="./img/logos/ico-cat-medium.svg">
+                        <img class="logo__image" width="34" height="38" src="./img/logos/ico-cat-small.svg" alt="Cat Energy">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./img/logos/logo-name-tablet.svg">
+                        <img class="logo__name logo__name--header" width="101" height="18" src="./img/logos/logo-name.svg" alt="" aria-hidden="true">
+                    </picture>
+                </a>
+                <button class="page-header__toggler page-header__toggler--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+            </div>
+            <ul class="page-header__menu site-menu site-menu--nojs">
+                <li class="site-menu__item"><a class="site-menu__link" href="./index.html">Главная</a></li>
+                <li class="site-menu__item"><a class="site-menu__link" href="./catalog.html">Каталог продукции</a></li>
+                <li class="site-menu__item"><a class="site-menu__link">Подбор программы</a></li>
+            </ul>
+        </nav>
+    </header>
+	<main class="page__main page-form">
+        <header class="page-form__header container">
+            <h1 class="page-form__title page__title">Подбор программы</h1>
+            <p class="page-form__lead page__lead">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        </header>
+		@@include('blocks/form.html')
+	</main>
+	@@include('blocks/footer.html')
+	<script src="./js/index.bundle.js"></script>
+</body>
+
+</html>
